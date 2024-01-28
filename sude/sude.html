@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        let dizi = ["Türkiye","Abd","Almanya","İngiltere"];
+console.log(dizi);
+console.log("************************************");
+console.log(dizi[2]);
+console.log("**************************************");
+console.log(dizi.indexOf("İngiltere")); // Dizi İndex'ini bulma
+console.log("**************************************");
+console.log(dizi.pop()); // Dizi'nin son elemanını silme
+console.log(dizi);
+console.log("**************************************");
+console.log(dizi.push("Amerika")); // diziye eleman ekleme
+console.log(dizi);
+console.log("**************************************");
+console.log("Silinen:", dizi.splice(2,1,"İspanya","Rusya"));
+console.log(dizi);
+console.log("**************************************");
+console.log("İki Diziyi Birleştirme");
+let dizi2 = ["ybs","işletme","çeko"]
+let dizi3 = ["maliye"]
+console.log("dizi2",dizi2);
+console.log("dizi3",dizi3);
+birlesim = dizi2.concat(dizi2)
+console.log(birlesim);
+birlesim2 = dizi3.concat(dizi2)
+console.log(birlesim2);
+console.log("**************************************");
+console.log("İç İçe Diziler");
+var matriks = [[1,2,3],[4,5,6],[7,8,9]]
+console.log(matriks[2][1]);
+console.log("**************************************");
+console.log("For Döngüsü İle Dizileri Yazdırma");
+//dizilere erişim 1
+let programlamaDilleri = ["php","python","java","ruby","go","#c"]
+for(let i = 0 ; i< programlamaDilleri.length;i++){
+    console.log(programlamaDilleri[i]);
+}
+//dizilere erişim 2
+console.log("**************************************");
+for(i in programlamaDilleri){
+    console.log(programlamaDilleri[i]);
+}
+//dizilere erişim 3
+console.log("**************************************");
+console.log("Dizi içerisindeki elemanlara erişim sağlar");
+for(i of programlamaDilleri){
+    console.log(i);
+}
+    </p>
+</body>
+</html>
