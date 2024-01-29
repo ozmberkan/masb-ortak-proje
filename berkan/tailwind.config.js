@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./berkan/src/**/*.{html,js}"],
+  content: [ './src/**/*.{html,js}'],
   theme: {
     extend: {},
   },
