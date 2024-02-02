@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/berkan/src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/cbde077159.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/berkan/app/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="mainContainer" class="w-screen h-screen bg-gray-200 flex justify-center items-center flex-col">
+        <div id="infoContainer" class="w-[912px] h-[30px]  flex justify-start items-center font-montserrat">
+            <span>5 8 5 8</span>
+        </div>
+        <div id="loginContainer" class="w-full h-[300px]  flex justify-center items-center flex-row gap-10  nimate__animated  animate__zoomIn flex-wrap ">
+                <input id="input1" oninput="inputKontrol(),otoGecis(event, 'input2')" type="text" maxlength="1" class="w-[200px] h-full flex items-center justify-center rounded-xl text-[80px] text-center focus-within:outline-none focus-within:border-blue-500 border-[3px] focus-within:shadow-2xl focus-within:shadow-blue-500">
+                <input id="input2" oninput="inputKontrol(),otoGecis(event, 'input3')" type="text" maxlength="1" class="w-[200px] h-full flex items-center justify-center rounded-xl text-[80px] text-center focus-within:outline-none focus-within:border-blue-500 border-[3px] focus-within:shadow-2xl focus-within:shadow-blue-500">
+                <input id="input3" oninput="inputKontrol(),otoGecis(event, 'input4')" type="text" maxlength="1" class="w-[200px] h-full flex items-center justify-center rounded-xl text-[80px] text-center focus-within:outline-none focus-within:border-blue-500 border-[3px] focus-within:shadow-2xl focus-within:shadow-blue-500">
+                <input id="input4" oninput="inputKontrol()" type="text" maxlength="1" class="w-[200px] h-full flex items-center justify-center rounded-xl text-[80px] text-center focus-within:outline-none focus-within:border-blue-500 border-[3px] focus-within:shadow-2xl focus-within:shadow-blue-500">
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="container" class="hidden justify-center items-start flex-col bg-white w-[800px] h-[700px] rounded-lg shadow-2xl border-[1px] border-gray-300 p-5 animate__animated  animate__zoomIn">
+            <div id="homeBuild" class="w-full h-[500px] mb-5  rounded-lg overflow-auto grid transition-all grid-cols-3 grid-rows-2 gap-5 animate__animated  animate__zoomIn">
+                    <div class="div1  bg-gray-100 border-[3px] col-start-1 col-end-2 row-start-1 row-end-1 rounded-md" > </div>
+                    <div class="div2  bg-gray-100 border-[3px] col-start-2 col-end-4 row-start-1 row-end-1 rounded-md" > </div>
+                    <div class="div3 bg-gray-100 border-[3px] col-start-4 col-end-2 row-start-2 row-end-3 rounded-md"> </div>
+                    <div class="div4 bg-gray-100 border-[3px] col-start-1 col-end-1 row-start-2 row-end-3 rounded-md"> </div>
+            </div>
+            <div id="messageBuild" class=" w-full h-[500px] mb-5 bg-gray-100 rounded-lg overflow-auto hidden flex-col transition-all animate__animated  animate__zoomIn">
+                <div id="message-first" class="w-full h-[125px]  p-3 flex justify-start items-center gap-3">
+                    <img src="/berkan/profile.jpg" alt="" class="rounded-full w-[30px] h-[30px]">
+                    <div id="message-container" class="w-[350px] h-full rounded-lg bg-gray-200 flex items-start justify-start px-5 py-3 flex-row gap-3">
+                        <div id="message-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde id eius modi aliquid eum?</p></div>
+                    </div>
+                </div>
+                <div id="message-second" class="w-full h-[125px]  p-3 flex justify-end items-center gap-3">
+                    <div id="message-container" class="w-[350px] h-full rounded-lg bg-gray-200 flex items-start justify-start px-5 py-3 flex-row gap-3">
+                        <div id="message-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde id eius modi aliquid eum?</p></div>
+                    </div>
+                    <img src="/berkan/profile.jpg" alt="" class="rounded-full w-[30px] h-[30px]">
+                </div>
+                <div id="message-third" class="w-full h-[125px]  p-3 flex justify-start items-center gap-3">
+                    <img src="/berkan/profile.jpg" alt="" class="rounded-full w-[30px] h-[30px]">
+                    <div id="message-container" class="w-[350px] h-full rounded-lg bg-gray-200 flex items-start justify-start px-5 py-3 flex-row gap-3">
+                        <div id="message-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde id eius modi aliquid eum?</p></div>
+                    </div>
+                </div>
+                <div id="message-four" class="w-full h-[125px] p-3 flex justify-end items-center gap-3">
+                    <div id="message-container" class="w-[350px] h-full rounded-lg bg-gray-200 flex items-start justify-start px-5 py-3 flex-row gap-3">
+                        <div id="message-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde id eius modi aliquid eum?</p></div>
+                    </div>
+                    <img src="/berkan/profile.jpg" alt="" class="rounded-full w-[30px] h-[30px]">
+
+                </div>
+
+                <div id="message-five" class="w-full h-[125px]  p-3 flex justify-start items-center gap-3">
+                    <img src="/berkan/profile.jpg" alt="" class="rounded-full w-[30px] h-[30px]">
+                    <div id="message-container" class="w-[350px] h-full rounded-lg bg-gray-200 flex items-start justify-start px-5 py-3 flex-row gap-3">
+                        <div id="message-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde id eius modi aliquid eum?</p></div>
+                    </div>
+                </div>
+
+                <div id="message-six" class="w-full h-[125px] p-3 flex justify-end items-center gap-3">
+                    <div id="message-container" class="w-[350px] h-full rounded-lg bg-gray-200 flex items-start justify-start px-5 py-3 flex-row gap-3">
+                        <div id="message-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde id eius modi aliquid eum?</p></div>
+                    </div>
+                    <img src="/berkan/profile.jpg" alt="" class="rounded-full w-[30px] h-[30px]">
+                </div>
+
+                <div id="message-second" class="w-full h-[125px]  p-3 flex justify-start items-center gap-3">
+                    <img src="/berkan/profile.jpg" alt="" class="rounded-full w-[30px] h-[30px]">
+                    <div id="message-container" class="w-[350px] h-full rounded-lg bg-gray-200 flex items-start justify-start px-5 py-3 flex-row gap-3">
+                        <div id="message-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde id eius modi aliquid eum?</p></div>
+                    </div>
+                </div>
+            </div>
+            <div id="settingsBuild" class="w-full h-[500px] mb-5  rounded-lg overflow-auto transition-all grid-cols-3 grid-rows-2 gap-5 animate__animated  animate__zoomIn hidden">
+                <div id="settingsBox" class=" bg-orange-400 border-[3px] col-start-1 col-end-2 row-start-1 row-end-1 rounded-md" > </div>
+                <div id="settingsBox" class=" bg-orange-400 border-[3px] col-start-2 col-end-4 row-start-1 row-end-1 rounded-md" > </div>
+                <div id="settingsBox" class=" bg-orange-400 border-[3px] col-start-4 col-end-2 row-start-2 row-end-3 rounded-md"> </div>
+                <div id="settingsBox" class=" bg-orange-400 border-[3px] col-start-1 col-end-1 row-start-2 row-end-3 rounded-md"> </div>
+            </div>
+            <div id="profileBuild" class="w-full h-[500px] mb-5  rounded-lg overflow-auto transition-all grid-cols-3 grid-rows-2 gap-5 animate__animated  animate__zoomIn hidden">
+                <div id="profileBox" class=" bg-red-400 border-[3px] col-start-1 col-end-2 row-start-1 row-end-1 rounded-md" > </div>
+                <div id="profileBox" class=" bg-red-400 border-[3px] col-start-2 col-end-4 row-start-1 row-end-1 rounded-md" > </div>
+                <div id="profileBox" class=" bg-red-400 border-[3px] col-start-4 col-end-2 row-start-2 row-end-3 rounded-md"> </div>
+                <div id="profileBox" class=" bg-red-400 border-[3px] col-start-1 col-end-1 row-start-2 row-end-3 rounded-md"> </div>
+            </div>
+            <div id="buttonBuild" class="bg-gray-200 w-full h-[100px] rounded-lg shadow-lg flex justify-center" >
+                <ul class="flex justify-center items-center gap-8 w-full py-3">
+
+
+                    <li id="homeBtn" class="flex justify-center items-center flex-col gap-2 border-[1px]  rounded-md cursor-pointer w-[80px] h-full bg-gray-300 hover:bg-gray-700 hover:text-gray-400 transition-colors duration-500">
+                        <i class="fa-solid fa-house text-[30px]" ></i>
+                    </li>
+
+
+                    <li id="messageBtn" class="flex justify-center items-center flex-col gap-2 border-[1px]  p-3 rounded-md cursor-pointer w-[80px] h-full hover:bg-gray-300 hover:text-gray-600 transition-colors duration-500">
+                        <i class="fa-solid fa-comment text-[30px]"></i>
+                    </li>
+
+
+                    <li id="plusBtn" class="flex justify-center items-center flex-col gap-2 border-[1px]  p-3 rounded-md cursor-pointer w-[80px] h-full hover:text-gray-500 transition-colors duration-500 relative">
+                        <i class="fa-solid fa-square-plus text-[30px]" ></i>
+                        <ul id="plusBtnPopUp" class="w-[150px] h-[40px] bg-gray-300 absolute -top-[30px] hidden justify-center  items-center gap-5 rounded-xl text-black hover:text-black" > 
+                            <li><a href="#" id="exitBtn"><i class="fa-solid fa-person-running"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-bolt"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-bolt"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-bolt"></i></a></li>
+                        </ul>
+                    </li>
+
+
+                    <li id="settingsBtn" class="flex justify-center items-center flex-col gap-2 border-[1px]  p-3 rounded-md cursor-pointer w-[80px] h-full hover:bg-gray-300 hover:text-gray-600 transition-colors duration-500">
+                        <i class="fa-solid fa-gear text-[30px]" ></i>
+                    </li>
+
+
+                    <li id="profileBtn" class="flex justify-center items-center flex-col gap-2 border-[1px]  p-3 rounded-md cursor-pointer w-[80px] h-full  transition-colors duration-500 grayscale hover:bg-gray-300 hover:grayscale-0">
+                        <img src="/berkan/profile.jpg" alt="" class="rounded-full w-[35px] h-[35px]" >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<script src="/berkan/app/app.js"></script>
+</body>
+</html>
