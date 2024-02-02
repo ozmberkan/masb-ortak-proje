@@ -2,7 +2,7 @@
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./berkan/app/**/*.{html,js}"],
+  content: ["./app/**/*.{html,js}"],
   theme: {
     extend: {
       fontFamily: { 
