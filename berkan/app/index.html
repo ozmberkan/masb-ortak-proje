@@ -14,7 +14,7 @@
 <body>
 
     <div id="mainContainer" class="w-screen h-screen bg-gray-200 flex justify-center items-center flex-col">
-        <div id="infoContainer" class="w-[912px] h-[30px]  flex justify-start items-center font-montserrat">
+        <!-- <div id="infoContainer" class="w-[912px] h-[30px]  flex justify-start items-center font-montserrat">
             <span>5 8 5 8</span>
         </div>
         <div id="loginContainer" class="w-full h-[300px]  flex justify-center items-center flex-row gap-10  nimate__animated  animate__zoomIn flex-wrap ">
@@ -22,28 +22,23 @@
                 <input id="input2" oninput="inputKontrol(),otoGecis(event, 'input3')" type="text" maxlength="1" class="w-[200px] h-full flex items-center justify-center rounded-xl text-[80px] text-center focus-within:outline-none focus-within:border-blue-500 border-[3px] focus-within:shadow-2xl focus-within:shadow-blue-500">
                 <input id="input3" oninput="inputKontrol(),otoGecis(event, 'input4')" type="text" maxlength="1" class="w-[200px] h-full flex items-center justify-center rounded-xl text-[80px] text-center focus-within:outline-none focus-within:border-blue-500 border-[3px] focus-within:shadow-2xl focus-within:shadow-blue-500">
                 <input id="input4" oninput="inputKontrol()" type="text" maxlength="1" class="w-[200px] h-full flex items-center justify-center rounded-xl text-[80px] text-center focus-within:outline-none focus-within:border-blue-500 border-[3px] focus-within:shadow-2xl focus-within:shadow-blue-500">
-        </div>
+        </div> -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div id="container" class="hidden justify-center items-start flex-col bg-white w-[800px] h-[700px] rounded-lg shadow-2xl border-[1px] border-gray-300 p-5 animate__animated  animate__zoomIn">
+        <div id="container" class="flex justify-center items-start flex-col bg-white w-[800px] h-[700px] rounded-lg shadow-2xl border-[1px] border-gray-300 p-5 animate__animated  animate__zoomIn">
             <div id="homeBuild" class="w-full h-[500px] mb-5  rounded-lg overflow-auto grid transition-all grid-cols-3 grid-rows-2 gap-5 animate__animated  animate__zoomIn">
-                    <div class="div1  bg-gray-100 border-[3px] col-start-1 col-end-2 row-start-1 row-end-1 rounded-md" > </div>
-                    <div class="div2  bg-gray-100 border-[3px] col-start-2 col-end-4 row-start-1 row-end-1 rounded-md" > </div>
-                    <div class="div3 bg-gray-100 border-[3px] col-start-4 col-end-2 row-start-2 row-end-3 rounded-md"> </div>
-                    <div class="div4 bg-gray-100 border-[3px] col-start-1 col-end-1 row-start-2 row-end-3 rounded-md"> </div>
+                    <div class="div1  bg-gray-100 border-[3px] col-start-1 col-end-3 row-start-1 row-end-1 rounded-md" >
+                        <div id="homeBoxText" class="px-4 py-5 mb-5">
+                            <h1 class="font-montserrat text-[20px]">Merhaba , Muhammed Berkan Özmen</h1>
+                        </div>
+                        <div id="homeBoxButtons" class="flex flex-row w-full gap-5 px-4">
+                            <button class="px-4 py-4 flex w-[100px] justify-center items-center font-montserrat h-[30px] rounded-sm bg-gray-300">Detaylar</button>
+                            <button class="px-4 py-4 flex w-[100px] justify-center items-center font-montserrat h-[30px] rounded-sm bg-gray-300">Mesajlar</button>
+                        </div>
+                    </div>
+                    <div class="div2 bg-gray-100 border-[3px] col-start-3 col-end-4 row-start-1 row-end-1 rounded-md" > </div>
+                    <div class="div3 bg-gray-100 border-[3px] col-start-3 col-end-4 row-start-2 row-end-3 rounded-md"> </div>
+                    <div class="div4 bg-gray-100 border-[3px] col-start-1 col-end-3 row-start-2 row-end-3 rounded-md"> </div>
             </div>
             <div id="messageBuild" class=" w-full h-[500px] mb-5 bg-gray-100 rounded-lg overflow-auto hidden flex-col transition-all animate__animated  animate__zoomIn">
                 <div id="message-first" class="w-full h-[125px]  p-3 flex justify-start items-center gap-3">
@@ -94,7 +89,13 @@
                 </div>
             </div>
             <div id="settingsBuild" class="w-full h-[500px] mb-5  rounded-lg overflow-auto transition-all grid-cols-3 grid-rows-2 gap-5 animate__animated  animate__zoomIn hidden">
-                <div id="settingsBox" class=" bg-orange-400 border-[3px] col-start-1 col-end-2 row-start-1 row-end-1 rounded-md" > </div>
+                <div id="settingsBox" class=" bg-gray-300 border-[3px] col-start-1 col-end-2 row-start-1 row-end-1 rounded-md flex justify-center items-center flex-col " >
+                    <span class="mb-10">Login Page Aktif/DeAktif</span>
+                    <label for="check2" class="w-[100px] h-[60px] relative rounded-full cursor-pointer shadow-xl bg-gray-200 flex">
+                        <input type="checkbox" id="check2" class="sr-only peer">
+                        <span class="w-[50px] h-[50px] bg-gray-800 absolute rounded-full top-1 left-1 peer-checked:bg-gray-600 peer-checked:left-11 transition-all duration-500"></span>
+                    </label>
+                </div>
                 <div id="settingsBox" class=" bg-orange-400 border-[3px] col-start-2 col-end-4 row-start-1 row-end-1 rounded-md" > </div>
                 <div id="settingsBox" class=" bg-orange-400 border-[3px] col-start-4 col-end-2 row-start-2 row-end-3 rounded-md"> </div>
                 <div id="settingsBox" class=" bg-orange-400 border-[3px] col-start-1 col-end-1 row-start-2 row-end-3 rounded-md"> </div>
