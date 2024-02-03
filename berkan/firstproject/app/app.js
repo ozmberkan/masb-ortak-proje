@@ -37,15 +37,14 @@ secondProject.addEventListener("click",()=>{
 
 
 exitBtn.addEventListener('click',(event) => {
-    container.classList.remove('flex')
-    container.classList.add('hidden')
-    loginContainer.classList.remove('hidden');
     document.getElementById("input1").value = "";
     document.getElementById("input2").value = "";
     document.getElementById("input3").value = "";
     document.getElementById("input4").value = "";
-    infoContainer.classList.remove('hidden');
-    infoContainer.classList.add('flex');
+    container.classList.remove('flex')
+    container.classList.add('hidden')
+    choiceContainer.classList.add('flex')
+    choiceContainer.classList.remove('hidden')
 })
 
 homeBtn.addEventListener("click", () => {
