@@ -12,10 +12,27 @@ const profileBtn = document.querySelector("#profileBtn")
 const plusBtnPopUp = document.querySelector('#plusBtnPopUp')
 const infoContainer = document.querySelector('#infoContainer')
 const loginContainer = document.querySelector('#loginContainer')
+const choiceContainer = document.querySelector('#choiceContainer')
+const firstProject = document.querySelector("#firstProject")
+const secondProject = document.querySelector("#secondProject")
+
 const loginBtn = document.querySelector('#loginBtn')
 const exitBtn = document.querySelector('#exitBtn')
 // !! ******************************************************* !! \\
 
+firstProject.addEventListener("click",()=>{
+    infoContainer.classList.remove('hidden')
+    infoContainer.classList.add('flex')
+    loginContainer.classList.remove('hidden')
+    loginContainer.classList.add('flex')
+    choiceContainer.classList.remove('flex')
+    choiceContainer.classList.add('hidden')
+})
+secondProject.addEventListener("click",()=>{
+    
+    choiceContainer.classList.remove('flex')
+    choiceContainer.classList.add('hidden')
+})
 
 
 
