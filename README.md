@@ -1,5 +1,5 @@
 # masbortakproje
-# <div class="container" align="center">
+<div class="container" align="center">
         <h1>Connect Four Oyununa Hoşgeldiniz!</h1>
         <h2>Oyunun amacı bir satır veya sütunda 4 aynı rengi elde etmektir.</h2>
         <h3>Sıra: Oyuncu 1</h3>
